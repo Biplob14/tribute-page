@@ -6,6 +6,10 @@
     <title>Nikola Tesla</title>
     <!-- bootstrap style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet"> 
     <!-- custom style -->
@@ -15,47 +19,51 @@
 </head>
 <body>
     <div id="main" class="container">
-        <header class="col-12">
-            <h1 class="text-center">Nikola Tesla</h1>
+        <header class="col-12" data-aos="fade-up">
+            <h1 class="text-center" id="title">Nikola Tesla</h1>
             <h5 class="text-center">The ultimate inventor of history</h5>
         </header>
-        <section class="sec-1">
-            <div class="container">
-                <img src="img/tesla.jpeg" alt="" class="text-center mx-auto img-res my-3">
-                <p class="text-center">Serbian-American engineer and physicist who did enormous invention in life.</p>
+        <section class="sec-1" >
+            <div class="container" >
+                <figure id="img-div">
+                    <img src="img/tesla.jpeg" alt="" class="text-center mx-auto img-res my-3" id="image" data-aos="zoom-in">
+                    <figcaption class="text-center" data-aos="fade-up">Serbian-American engineer and physicist who did enormous invention in life.</figcaption>
+                </figure>
+               
             </div>
         </section>
 
-        <section class="sec-2">
-            <div class="container">
-                <h4 class="text-center my-5">Here's a timeline of Nikola Tesla</h4>
-            </div>
-            <div class="timeline mx-auto">
-                <ul>
-                    <li><b>1859</b> - Born  to Serbian parents in the village of Smiljan, Austrian Empire near the town of Gospić, in the territory of modern-day Croatia.</li>
-                    <li><b>1875</b> - Tesla enrolls at Austrian Polytechnic. At the polytechnic school Tesla began his studies in mechanical and electrical engineering. </li>
-                    <li><b>1880</b> - Teesla moves to pragur to study philosophy. He took up classes in philosophy at the university, though he didn't receive grades for the courses.</li>
-                    <li><b>1882</b> - Nikola Tesla moved to paris and  begins working for Continental Edison company, designing improvements to electric equipment brought overseas from Edison's idea. Same year Tesla identifies Magnetic induction field principle.</li>
-                    <li><b>1884</b> - On Jun, Tesla arrives in the United States, in New York City with little besides a letter of recommendation from Charles Batchelor, a former employer.</li>
-                    <li><b>1885</b> - Quit working for Edison and in the same year he submitted some of his first patents.</li>
-                    <li><b>1886</b> - Nikola Tesla forms Tesla Electric Light and Manufacturing Company. It was located in Rahway, New Jersey.</li>
-                    <li><b>1887</b> - Tesla re-imagines the electric motor and War of current begins. During the initial years of electricity distribution, Edison's direct current was the standard for the United States and Edison was not inclined to lose all his patent royalties. </li>
-                    <li><b>1888</b> - At an AIEE meeting on May 16, 1888, Nikola Tesla delivered a lecture entitled A New System of Alternating Current Motors and Transformers, describing the equipment which allowed efficient generation and use of polyphase alternating currents.</li>
-                    <li><b>1890</b> - Tesla Begins His Work On Wireless Power Transmission. After 1890, Tesla researched various approaches to transmitting power by inductive and capacitive coupling.This wa through the use of AC voltages that were produced by his famous 'Tesla coil'.</li>
-                    <li><b>1891</b> - Nikola Tesla patents the Tesla Coil. It is used to produce high voltage, low current, high frequency alternating current electricity. </li>
-                    <li><b>1899</b> - Tesla decided to move and began research in Colorado Springs, Colorado, where he would have room for his high-voltage, high-frequency experiments. </li>
-                    <li><b>1901</b> - Nikola Tesla began planning the wardenclyffe tower facility ca. </li>
-                    <li><b>1913</b> - Tesla patents bladeless turbine. Tesla's patents state that the device was intended for the use of fluids as motive agents, as distinguished from the application of the same for the propulsion or compression of fluids.</li>
-                    <li><b>1934</b> - The New York Times publicizes Nikola Tesla's particle Beam research. The device was based upon a large Van de Graaff generator of unique design and a special type of open-ended vacuum tube.</li>
-                    <li><b>1943</b> - At age 86, Tesla died in a Hotel Room in New York. He died alone, and his body was found by a maid who ignored a do not disturb sign on Tesla’s room. The assistant medical professional evaluated the body and determined the cause of death was related to 
-                                    coronary complications. A few days after the FBI ordered for the acquisition of his belongings, John G Trump was called in to evaluate his works. Trump was a well known electrical engineer who worked for the state, which was held in custody. Following a three day investigation, 
-                                    a Trumps report concluded that was nothing that would demonstrate a hazard in unfriendly circumstances.</li>
-                </ul>
+        <section class="sec-2" id="tribute-info">
+            <div class="container" >
+                <h4 class="text-center my-5" data-aos="fade-up">Here's a timeline of Nikola Tesla</h4>
+            
+                <div class="timeline mx-auto">
+                    <ul>
+                        <li data-aos="fade-up"><b>1859</b> - Born  to Serbian parents in the village of Smiljan, Austrian Empire near the town of Gospić, in the territory of modern-day Croatia.</li>
+                        <li data-aos="fade-up"><b>1875</b> - Tesla enrolls at Austrian Polytechnic. At the polytechnic school Tesla began his studies in mechanical and electrical engineering. </li>
+                        <li data-aos="fade-up"><b>1880</b> - Teesla moves to pragur to study philosophy. He took up classes in philosophy at the university, though he didn't receive grades for the courses.</li>
+                        <li data-aos="fade-up"><b>1882</b> - Nikola Tesla moved to paris and  begins working for Continental Edison company, designing improvements to electric equipment brought overseas from Edison's idea. Same year Tesla identifies Magnetic induction field principle.</li>
+                        <li data-aos="fade-up"><b>1884</b> - On Jun, Tesla arrives in the United States, in New York City with little besides a letter of recommendation from Charles Batchelor, a former employer.</li>
+                        <li data-aos="fade-up"><b>1885</b> - Quit working for Edison and in the same year he submitted some of his first patents.</li>
+                        <li data-aos="fade-up"><b>1886</b> - Nikola Tesla forms Tesla Electric Light and Manufacturing Company. It was located in Rahway, New Jersey.</li>
+                        <li data-aos="fade-up"><b>1887</b> - Tesla re-imagines the electric motor and War of current begins. During the initial years of electricity distribution, Edison's direct current was the standard for the United States and Edison was not inclined to lose all his patent royalties. </li>
+                        <li data-aos="fade-up"><b>1888</b> - At an AIEE meeting on May 16, 1888, Nikola Tesla delivered a lecture entitled A New System of Alternating Current Motors and Transformers, describing the equipment which allowed efficient generation and use of polyphase alternating currents.</li>
+                        <li data-aos="fade-up"><b>1890</b> - Tesla Begins His Work On Wireless Power Transmission. After 1890, Tesla researched various approaches to transmitting power by inductive and capacitive coupling.This wa through the use of AC voltages that were produced by his famous 'Tesla coil'.</li>
+                        <li data-aos="fade-up"><b>1891</b> - Nikola Tesla patents the Tesla Coil. It is used to produce high voltage, low current, high frequency alternating current electricity. </li>
+                        <li data-aos="fade-up"><b>1899</b> - Tesla decided to move and began research in Colorado Springs, Colorado, where he would have room for his high-voltage, high-frequency experiments. </li>
+                        <li data-aos="fade-up"><b>1901</b> - Nikola Tesla began planning the wardenclyffe tower facility ca. </li>
+                        <li data-aos="fade-up"><b>1913</b> - Tesla patents bladeless turbine. Tesla's patents state that the device was intended for the use of fluids as motive agents, as distinguished from the application of the same for the propulsion or compression of fluids.</li>
+                        <li data-aos="fade-up"><b>1934</b> - The New York Times publicizes Nikola Tesla's particle Beam research. The device was based upon a large Van de Graaff generator of unique design and a special type of open-ended vacuum tube.</li>
+                        <li data-aos="fade-up"><b>1943</b> - At age 86, Tesla died in a Hotel Room in New York. He died alone, and his body was found by a maid who ignored a do not disturb sign on Tesla’s room. The assistant medical professional evaluated the body and determined the cause of death was related to 
+                                        coronary complications. A few days after the FBI ordered for the acquisition of his belongings, John G Trump was called in to evaluate his works. Trump was a well known electrical engineer who worked for the state, which was held in custody. Following a three day investigation, 
+                                        a Trumps report concluded that was nothing that would demonstrate a hazard in unfriendly circumstances.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="sec-3">
-            <div class="container timeline">
+            <div class="container timeline" data-aos="fade-up">
                 <h4 class="text-center">Some quotes from Nikola Tesla</h4>
                 <p class="text-justify">I don’t care that they stole my idea …  I care that they don’t have any of their own.</p>
                 <p class="text-justify">Let the future tell the truth, and evaluate each one according to his work and accomplishments. 
@@ -64,10 +72,10 @@
                 <p class="text-justify">Everyone should consider his body as a priceless gift from one whom he loves above all, a marvelous work of art, 
                     of indescribable beauty, and mystery beyond human conception, and so delicate that a word, a breath, a look, nay, a thought may injure it.</p>
             </div>
-            <p class="mt-5 text-center">Let's remember him with his creation and inventions.</p>
+            <p class="mt-5 text-center" data-aos="fade-down">Let's remember him with his creation and inventions. You can learn more about Tesla from <a id="tribute-link" href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank">wikipedia</a></p>
         </section>
 
-        <footer>
+        <footer >
             &copy; -SR Biplob
         </footer>
 
@@ -83,10 +91,22 @@
 
 
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 50,
+        duration: 1000,
+        easing: 'ease-in-out', 
+        
+      });
+    </script>
 
+    </script>
     <!-- bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
